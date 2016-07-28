@@ -1,0 +1,21 @@
+.xb-field-test-fields-list li {
+    margin-bottom: 1.5em;
+}
+
+input.xb-field-test-new-value {
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 1px;
+    margin: 0 1em;
+}
+
+.xb-field-test-editor {
+    opacity: 0.1;
+}
+
+
+.xb-field-test-editor:hover {
+    opacity: 1;
+}

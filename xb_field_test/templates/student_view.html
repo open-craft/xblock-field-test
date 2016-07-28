@@ -1,0 +1,15 @@
+<h2>Field Test</h2>
+
+<ul class="xb-field-test-fields-list">
+    {% for field in fields %}
+        <li data-field-name="{{field.name}}">
+            <strong>{{field.name}}</strong>:
+            {% if field.supported %}
+                <span class="xb-field-test-value">{{ field.value }}</span><br>
+                <p class="xb-field-test-editor">(Change value: <input type=text class="xb-field-test-new-value" /><button class="xb-field-test-submit">Update</button>)</p>
+            {% else %}
+                <em>Not supported by this runtime</em>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
